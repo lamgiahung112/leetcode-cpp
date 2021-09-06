@@ -6,7 +6,6 @@ using namespace std;
 int countPrimes(int n) {
     vector<bool> prime (n, true);
     int count = 0;
-    if (n <= 2) return 0;
 
     for (int i = 2; i < sqrt(n); i++) {
         if (prime[i]) {
